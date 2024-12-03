@@ -1,0 +1,305 @@
+.container {
+    // width: 85%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+// Slide show
+.slider {
+    display: flex; /* Dùng Flexbox để sắp xếp các ảnh theo chiều ngang */
+    width: 85%;
+    margin: auto;
+    overflow: hidden; /* Ẩn phần ảnh chạy ngoài khung */
+    position: relative;
+}
+
+.slider .slider-items {
+    display: flex;
+    animation: slide 16s linear infinite; /* Animation để di chuyển ảnh */
+}
+
+.slider .slider-item {
+    width: 25%; /* Mỗi ảnh chiếm 25% chiều rộng của container */
+    flex-shrink: 0; /* Đảm bảo ảnh không bị co lại */
+}
+
+.slider-item img {
+    width: 100%; /* Đảm bảo ảnh chiếm hết diện tích của phần tử cha */
+    display: block;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%); /* Bắt đầu từ ảnh đầu tiên */
+    }
+    12.5% {
+        transform: translateX(-25%); /* Đến ảnh thứ 2 */
+    }
+    25% {
+        transform: translateX(-50%); /* Đến ảnh thứ 3 */
+    }
+    37.5% {
+        transform: translateX(-75%); /* Đến ảnh thứ 4 */
+    }
+    50% {
+        transform: translateX(-100%); /* Đến ảnh thứ 5 */
+    }
+    62.5% {
+        transform: translateX(-125%); /* Đến ảnh thứ 6 */
+    }
+    75% {
+        transform: translateX(-150%); /* Đến ảnh thứ 7 */
+    }
+    87.5% {
+        transform: translateX(-175%); /* Đến ảnh thứ 8 */
+    }
+    100% {
+        transform: translateX(-200%); /* Quay lại ảnh đầu tiên */
+    }
+}
+
+
+// Search
+.container .search{
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    margin-top: 70px;
+    display: flex;
+    border-radius: 20px;    
+    box-shadow: 5px 8px 10px rgb(201, 201, 201);
+    
+}
+.container .search input{
+    width: 97%;
+    padding: 0 20px ;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    outline-style: none;
+}
+.search .search-icon{
+    padding: 20px;
+    background-color: green;
+    font-size: 25px;
+    color: white;
+    border-radius: 20px;
+    margin: 5px 10px;
+}
+
+// findCode
+.container .findCode {
+    margin-top: 70px;
+    background-color: white;
+    // height: 100vh;
+}
+.findCode-content {
+    width: 85%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+.findCode-content h2 {
+    font-weight: 600;
+    padding: 20px 10px;
+}
+.findCode-items {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Mỗi hàng có 6 cột */
+    gap: 17px; /* Khoảng cách giữa các phần tử */
+}
+.item {
+    text-align: center; /* Canh giữa nội dung */
+    background-color: rgb(254, 87, 34);
+    padding: 50px 0px;
+    border-radius: 20px;
+    color: white;
+}
+.item img {
+    max-width: 30%; /* Ảnh sẽ chiếm toàn bộ chiều rộng của phần tử cha */
+    height: auto; /* Đảm bảo tỷ lệ ảnh không bị méo */
+    padding-bottom: 10px;
+}
+.item h3  {
+    font-weight: 550;
+}
+.item h3 p {
+    margin-bottom: 5px;
+}
+.item:nth-child(2) {
+    background: rgb(10, 104, 255);
+}
+.item:nth-child(3) {
+    background: rgb(40, 158, 216);
+}
+.item:nth-child(4) {
+    background: rgb(255, 95, 7);
+}
+.item:nth-child(5) {
+    background: rgb(238, 78, 46);
+}
+.item:nth-child(6) {
+    background: rgb(0, 104, 133);
+}
+.item:nth-child(7) {
+    background: rgb(3, 4, 177);
+}
+.item:nth-child(8) {
+    background: rgb(237, 38, 42);
+}
+.item:nth-child(9) {
+    background: rgb(40, 146, 69);
+}
+.item:nth-child(10) {
+    background: rgb(202, 33, 40);
+}
+.item:nth-child(11) {
+    background: rgb(0, 158, 225);
+}
+.item:nth-child(12) {
+    background: rgb(163, 30, 38);
+}
+
+// Voucher-hot
+.voucherHot {
+    background-color: rgb(238, 238, 238);
+    padding-bottom: 50px;
+}
+.voucherHot-content {
+    width: 88%;
+    margin: auto;
+}
+.voucherHot-content>a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+.voucherHot-content h2 {
+    font-weight: 600;
+    padding: 50px 10px 20px 10px;
+}
+.vouchers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Mỗi hàng có 6 cột */
+    gap: 20px;
+}
+.voucher-item {
+    background-color: white;
+    // height: 150px;
+    border-radius: 7px;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 30%;
+        left: -10%;
+        width: 60px;
+        height: 60px;
+        background-color: rgb(238, 238, 238);
+        border-radius: 50%;
+    }
+    
+}
+.voucher-item>.cut {
+    width: 85%;
+    margin: auto;
+    padding: 5px 0;
+}
+.voucher-item .top {
+    display: flex;
+}
+.voucher-item .left>img{
+    max-width: 40%;
+    border-radius: 50%;
+}
+.voucher-item .top>.left {
+    flex: 3;
+    border-right: 2px dashed rgb(197, 197, 197);
+    margin: 10px 0;
+    text-align: center;
+}
+.voucher-item .top>.left h5 {
+    font-size: 12px;
+    font-weight: 550;
+}
+.voucher-item .top>.right {
+    flex: 7;
+    margin-left: 10px;
+}
+.voucher-item .top>.right>.discount {
+    padding-top: 5px;
+    font-size: 15px;
+    font-weight: 550;
+}
+.voucher-item .top>.right>.discount>span {
+    font-size: 25px;
+    color: rgb(2, 148, 2);
+    padding-left: 2px;
+}
+.voucher-item .top>.right>.condition {
+    padding-top: 5px;
+    font-size: 12px;
+}
+.voucher-item .top>.right>.condition>span {
+    font-size: 12px;
+    font-weight: 600;
+}
+.voucher-item .top>.right>.note {
+    padding-top: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    font-style: italic;
+    color: rgb(2, 148, 2);
+    
+}
+.voucher-item .top>.right>.note>span {
+    font-style: italic;
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
+}
+.voucher-item .bot{
+    margin: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.voucher-item .bot>.expiry {
+    font-size: 12px;
+}
+.voucher-item .bot>.expiry>.clock-icon{
+    padding-right: 5px;
+}
+.voucher-item .bot>.expiry>span {
+    font-style: italic;
+}
+.voucher-item .bot>.promotion {
+    font-size: 12px;
+    font-weight: 500;
+    font-style: italic;
+    border: 2px solid rgb(2, 148, 2);
+    border-radius: 5px;
+    color: rgb(2, 148, 2);
+    padding: 2px 7px;
+}
+.voucher-item .bot>.action>a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 12px;
+    background-color: #f90;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+

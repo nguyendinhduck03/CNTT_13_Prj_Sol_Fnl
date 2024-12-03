@@ -1,0 +1,74 @@
+.adminLayout {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+
+    .header {
+        grid-area: header;
+        background: #0479c7;
+        color: white;
+        padding: 1rem;
+
+        .toggleButton {
+            background: #00a7fb;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+        }
+    }
+
+    .main {
+        grid-area: main;
+        padding: 1rem;
+        transition: margin-left 0.3s ease;
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+        background-color: #f0f0f0;
+        padding: 1rem;
+        border-left: 1px solid #ddd;
+        width: 250px;
+        overflow: hidden;
+        transition: width 0.3s ease, padding 0.3s ease;
+
+        &.closed {
+            width: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            transition: opacity 0.3s ease;
+
+            &.closed {
+                opacity: 0;
+            }
+
+            li {
+                margin: 0.5rem 0;
+                padding: 0.5rem;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #ddd;
+                }
+            }
+        }
+    }
+
+    .footer {
+        grid-area: footer;
+        background: #0479c7;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,94 @@
+.listPage {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 20px;
+
+    .tableContainer {
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 90%;
+        margin: 0 auto;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        background-color: #ffffff;
+
+        .headerTable {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f8f9fc;
+            padding: 20px 20px;
+        }
+
+        .headerTable button {
+            padding: 6px 12px;
+            margin: 5px;
+            font-size: 14px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+    }
+
+    .title {
+        font-size: medium;
+        margin-bottom: 0;
+    }
+
+    .voucherTable {
+        width: 95%;
+        border-collapse: collapse;
+        margin: 0 auto;
+        margin-bottom: 40px;
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        th {
+            background-color: #f8f9fc;
+            font-weight: bold;
+            color: #333;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .statusActive {
+            color: green;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        button {
+            padding: 6px 12px;
+            margin: 5px;
+            font-size: 14px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    }
+}
