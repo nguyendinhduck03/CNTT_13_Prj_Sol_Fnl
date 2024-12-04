@@ -32,5 +32,7 @@
     - Làm được khá là nhiều thứ mà nhác ghi quá, nói chung là về mặt logic thì ổn rồi
     - Giao diện trang đăng ký, đăng nhập chưa có css, cần làm lại UI
 # Task 6: Hoàn tất luồng: Mua Bán NFTs
-
+    - Làm hoàn thiện được phần mua bằng ví Phantom từ ví GameShift
+    - Mọi thứ coi như đã hoàn thành
+# Task 7: Final Task - Tinh chỉnh lại website
     
