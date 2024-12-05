@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import style from "./homeLayout.module.scss";
+import style from "./authLayout.module.scss";
 import classNames from 'classnames/bind';
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.svg";
@@ -9,12 +9,11 @@ import ConnectWallet from "../../components/connectWallet";
 import { ToastContainer } from 'react-toastify';
 import WalletInfo from '../../components/WalletInfo';
 
-import footer from "../../assets/images/footer.jpg";
 
 const cx = classNames.bind(style);
 
 // eslint-disable-next-line react/prop-types
-function HomeLayout({ children }) {
+function AuthLayout({ children }) {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
@@ -80,11 +79,11 @@ function HomeLayout({ children }) {
       </main>
 
       {/* Footer */}
-      <footer>
+      {/* <footer>
           <img src={footer} alt="Placeholder Image" />
-      </footer>
+      </footer> */}
     </div>
   );
 }
 
-export default HomeLayout;
+export default AuthLayout;

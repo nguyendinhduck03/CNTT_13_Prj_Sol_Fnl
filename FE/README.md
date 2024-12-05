@@ -35,4 +35,8 @@
     - Làm hoàn thiện được phần mua bằng ví Phantom từ ví GameShift
     - Mọi thứ coi như đã hoàn thành
 # Task 7: Final Task - Tinh chỉnh lại website
+    - Hoàn thành dự án 05/12/2024
+
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKmXcpcKl2Y0bNwdEepXQf5m-5Kq1doJ6JrQ&s
+Lưu mã trên banner lúc 12H, 20H hàng ngày...
     
