@@ -265,13 +265,13 @@ function Home() {
                           icon={faClockRotateLeft}
                           className={cx("clock-icon")}
                         />
-                        HSD: <span>30/11</span>
+                        HSD: <span>30/12</span>
                       </div>
                       <div className={cx("promotion")}>#Lưu trên banner</div>
                       <div className={cx("action")}>
                         {/* <Link to="/banner">Đến Banner</Link> */}
                         <button onClick={() => handleBuy(voucher.item.id)}>
-                          mua
+                          Đến Banner
                         </button>
                       </div>
                     </div>

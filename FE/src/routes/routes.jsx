@@ -1,5 +1,6 @@
 import config from "../config";
 import homeLayout from "../layouts/homeLayout";
+import authLayout from "../layouts/authLayout";
 import adminLayout from "../layouts/adminLayout";
 import home from "../pages/client/home";
 import maGiamGia from "../pages/client/menu";
@@ -11,8 +12,8 @@ import login from "../pages/auth/login";
 
 
 export const publicRoutes = [
-    { path: config.routes.register, component: register, layout: homeLayout },
-    { path: config.routes.login, component: login, layout: homeLayout },
+    { path: config.routes.register, component: register, layout: authLayout },
+    { path: config.routes.login, component: login, layout: authLayout },
     { path: config.routes.home, component: home, layout: homeLayout },
     { path: config.routes.maGiamGia, component: maGiamGia, layout: homeLayout },
     { path: config.routes.dashbroard, component: dashbroard, layout: adminLayout },

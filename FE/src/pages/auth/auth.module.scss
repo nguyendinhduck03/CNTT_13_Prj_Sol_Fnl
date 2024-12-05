@@ -1,0 +1,214 @@
+.login-container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #4c4bff, #6b6bff);
+    color: #fff;
+  
+    .login-box {
+      display: flex;
+      width: 70%;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  
+      .left-section {
+        flex: 1;
+        background-color: #182848;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        color: #fff;
+  
+        img {
+          border-radius: 50%;
+          margin-bottom: 20px;
+        }
+  
+        p {
+          margin-top: 20px;
+          font-size: 14px;
+          line-height: 1.5;
+        }
+      }
+  
+      .right-section {
+        flex: 1;
+        background: #fff;
+        color: #333;
+        padding: 40px;
+  
+        h2 {
+          margin-bottom: 20px;
+          font-size: 24px;
+        }
+
+        p {
+          margin-bottom: 10px;
+        }
+  
+        .input-group {
+          margin-bottom: 20px;
+  
+          input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 5px;
+          }
+        }
+  
+        .actions {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 20px;
+  
+          a {
+            font-size: 14px;
+            color: #e000bb;
+            text-decoration: none;
+          }
+        }
+  
+        .buttons {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+  
+          button {
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+  
+            &:first-child {
+              background: #c20479;
+              color: #fff;
+            }
+  
+            &:last-child {
+              background: #f2f2f2;
+              color: #333;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+
+  .login-container {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #4c4bff, #6b6bff);
+    background-image: url('../../assets/images/auth/bglog.jpg');
+    background-size: cover; /* Để ảnh phủ kín */
+    background-position: center; /* Căn giữa ảnh */
+    color: #fff;
+  
+    .login-box {
+      display: flex;
+      width: 70%;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  
+      .left-section {
+        flex: 1;
+        background: 
+          linear-gradient(rgba(223, 20, 209, 0.5), rgba(14, 0, 13, 0.5)), 
+          url('../../assets/images/auth/bglog.jpg');
+        background-size: cover; /* Để ảnh phủ kín */
+        background-position: center; /* Căn giữa ảnh */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        color: #fff;
+      
+  
+        img {
+          width: 140px;
+        }
+  
+        p {
+          margin-top: 20px;
+          font-size: 14px;
+          line-height: 1.5;
+        }
+      }
+  
+      .right-section {
+        flex: 1;
+        background: #fff;
+        color: #333;
+        padding: 40px;
+  
+        h2 {
+          margin-bottom: 20px;
+          font-size: 24px;
+        }
+  
+        .input-group {
+          margin-bottom: 20px;
+  
+          input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 5px;
+          }
+        }
+  
+        .actions {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 20px;
+  
+          a {
+            font-size: 14px;
+            color: #960471;
+            text-decoration: none;
+          }
+        }
+  
+        .buttons {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+  
+          button {
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+  
+            &:first-child {
+              background: #940f8d;
+              color: #fff;
+            }
+  
+            &:last-child {
+              background: #f2f2f2;
+              color: #333;
+            }
+          }
+        }
+      }
+    }
+  }
+  

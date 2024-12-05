@@ -6,7 +6,7 @@ const cx = classNames.bind(style);
 function dashbroard() { 
     return(
         <div className={cx('title')}>
-            <h1>welcome</h1>
+            <h1>Chào mừng bạn đến với trang quản trị !</h1>
         </div>
     );
 }
